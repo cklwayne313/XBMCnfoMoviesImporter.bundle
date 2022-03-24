@@ -786,6 +786,9 @@ class XBMCNFO(PlexAgent):
                                         if not response == 200:
                                             log.debug ('failed setting ' + athumbloc + ' actor photo: ' + aimagepath)
                                             aimagepath = None
+                                        else:
+                                            aimagepath = aimagepathurl
+                                            log.debug ('success setting  ' + athumbloc + ' actor url: ' + aimagepathurl)
                                     if aimagepath:
                                         newrole.photo = aimagepath
                                         log.debug ('success setting ' + athumbloc + ' actor photo: ' + aimagepath)
